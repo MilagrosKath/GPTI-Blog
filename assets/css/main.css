@@ -3105,26 +3105,3 @@ input, select, textarea {
 			}
 
 	}
-
-/* Equipo */
-
-
-.team-section {
-    text-align: center;
-}
-
-.team-row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.team-member {
-    margin: 0 10px; /* Ajusta el margen entre los miembros del equipo según sea necesario */
-}
-
-.team-member img {
-    border-radius: 50%;
-}
-
-
