@@ -3105,3 +3105,30 @@ input, select, textarea {
 			}
 
 	}
+
+
+/* Estilos para el menú desplegable */
+#nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+#nav ul li:hover > ul {
+    display: block;
+}
+
+#nav ul ul li {
+    width: 200px; /* Ancho del menú desplegable */
+}
+
+#nav ul ul li a {
+    color: #000;
+}
+
+#nav ul ul li a:hover {
+    background-color: #f0f0f0;
+}
