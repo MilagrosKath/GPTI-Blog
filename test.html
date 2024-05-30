@@ -1,11 +1,156 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GPTI - Blog</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="images/logo.png" type="image/png">
 </head>
-<body>
-    
+<body class="homepage is-preload">
+    <div id="page-wrapper">
+        <!-- Header -->
+        <header id="header">
+            <div class="logo container">
+                <div>
+                    <h1><a href="index.html" id="logo">Gestion de Proyectos de Tecnologías de Información</a></h1>
+                    <p> - Proyecto </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li class="current"><a href="index.html">INICIO</a></li>
+                <li>
+                    <a href="#">SECCIONES</a>
+                    <ul>
+                        <li>
+                            <a href="#" onclick="showSection('entradas')">Entradas</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="showSection('herramientas')">Herramientas</a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="showSection('salidas')">Salidas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="left-sidebar.html">EMPRESA</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <section id="main" class="wrapper style1 fade-up">
+            <div class="inner">
+                <div id="entradas" class="content-section" style="display:none;">
+                    <h2>Entradas</h2>
+                    <p>Contenido relacionado con las entradas.</p>
+                </div>
+                <div id="herramientas" class="content-section" style="display:none;">
+                    <h2>Herramientas</h2>
+                    <p>Contenido relacionado con las herramientas.</p>
+                </div>
+                <div id="salidas" class="content-section" style="display:none;">
+                    <h2>Salidas</h2>
+                    <p>Contenido relacionado con las salidas.</p>
+                </div>
+                <div id="equipo" class="content-section">
+                    <h2>EQUIPO</h2>
+                    <div class="features" style="display: inline-block; text-align: left;">
+                        <div class="row">
+                            <div class="col-4 col-6-medium col-12-small">
+                                <section>
+                                    <div class="centered">
+                                        <span class="icon solid major fa-user"></span>
+                                        <img src="images/pic01.jpg" alt="Daniel Gonzales Castillo" width="50" height="50">
+                                        <h3>Daniel Gonzales Castillo</h3>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-4 col-6-medium col-12-small">
+                                <section>
+                                    <div class="centered">
+                                        <span class="icon solid major fa-user"></span>
+                                        <img src="images/pic01.jpg" alt="Milagros Soto Obregon" width="50" height="50">
+                                        <h3>Milagros Soto Obregon</h3>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-4 col-6-medium col-12-small">
+                                <section>
+                                    <div class="centered">
+                                        <span class="icon solid major fa-user"></span>
+                                        <img src="images/pic01.jpg" alt="James Huanuco Vicuña" width="50" height="50">
+                                        <h3>James Huanuco Vicuña</h3>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <p></p>
+                        <div class="row">
+                            <div class="col-4 col-6-medium col-12-small">
+                                <section>
+                                    <div class="centered">
+                                        <span class="icon solid major fa-user"></span>
+                                        <img src="images/pic01.jpg" alt="Omar Ciriaco Esquivel" width="50" height="50">
+                                        <h3>Omar Ciriaco Esquivel</h3>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-4 col-6-medium col-12-small">
+                                <section>
+                                    <div class="centered">
+                                        <span class="icon solid major fa-user"></span>
+                                        <img src="images/pic01.jpg" alt="Antony Vasquez Leiva" width="50" height="50">
+                                        <h3>Antony Vasquez Leiva</h3>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-4 col-6-medium col-12-small">
+                                <section>
+                                    <div class="centered">
+                                        <span class="icon solid major fa-user"></span>
+                                        <img src="images/pic01.jpg" alt="Miguel Yauricasa Mendoza" width="50" height="50">
+                                        <h3>Miguel Yauricasa Mendoza</h3>
+                                    </div>
+                                </div>
+                                <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+                <!-- Copyright -->
+                <div id="copyright">
+                    <ul class="menu">
+                        <li>&copy; Todos los derechos reservados</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        function showSection(section) {
+            document.querySelectorAll('.content-section').forEach(function(element) {
+                element.style.display = 'none';
+            });
+            document.getElementById(section).style.display = 'block';
+        }
+    </script>
 </body>
 </html>
