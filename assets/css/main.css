@@ -3106,29 +3106,38 @@ input, select, textarea {
 
 	}
 
-
-/* Estilos para el menú desplegable */
-#nav ul ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    padding: 10px 0;
-}
-
-#nav ul li:hover > ul {
-    display: block;
-}
-
-#nav ul ul li {
-    width: 200px; /* Ancho del menú desplegable */
-}
-
-#nav ul ul li a {
-    color: #000;
-}
-
-#nav ul ul li a:hover {
-    background-color: #f0f0f0;
-}
+	#nav ul ul {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: #fff;
+		padding: 0;
+		box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+	}
+	
+	#nav ul ul ul {
+		top: 0;
+		left: 100%;
+	}
+	
+	#nav ul li:hover > ul {
+		display: block;
+	}
+	
+	#nav ul ul li {
+		width: 200px;
+		float: none;
+	}
+	
+	#nav ul ul a {
+		padding: 10px 15px;
+		color: #333;
+		text-decoration: none;
+		display: block;
+	}
+	
+	#nav ul ul a:hover {
+		background-color: #f0f0f0;
+	}
+	
