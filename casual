@@ -25,7 +25,7 @@
             <nav id="nav">
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
-                    <li class="current"><a href="#">EDT/WBS</a></li>
+                    <li><a href="index.html">DESARROLLO DE CRONOGRAMA</a></li>
                     
                 </ul>
             </nav>
@@ -43,24 +43,10 @@
                                         </header>
     
                                         <section>
-                                            <div></div>
-                                            <h2 style="font-weight: bold; text-align: center; color: #3D9970;">PLAN DE DIRECCION DEL PROYECTO</h2>
+                                            <div>
+                                                <h2 style="font-weight: bold; text-align: center; color: #3D9970;">FACTORES AMBIENTALES Y ACTIVOS</h2>
 
-                                                <p> es un documento que establece cómo se ejecutará, supervisará y controlará el proyecto, detallando 
-                                                    los procesos, herramientas y técnicas que se utilizarán para lograr los objetivos del proyecto de 
-                                                    manera eficiente y efectiva.</p>
-
-                                                <iframe src="documents/Entrada-PlanDirecciónproyectos1.pdf"  width="100%" height="600px"></iframe>
-                                                <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
-                                                    <a href="documents/Entrada-PlanDirecciónproyectos1.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
-                                                        <span style="border-bottom: 1px solid #3D9970;">- Ver documento</span>
-                                                        <span style="font-style: italic; color: #3D9970;">PLAN DE DIRECCION DEL PROYECTO PDF</span>
-                                                    </a>
-                                                </p>
-                                                <p></p>
-                                            <h2 style="font-weight: bold; text-align: center; color: #3D9970;">FACTORES AMBIENTALES Y ACTIVOS</h2>
-
-                                            <iframe src="documents/FACTORESAMBIENTALES1.pdf"  width="100%" height="600px"></iframe>
+                                                <iframe src="documents/FACTORESAMBIENTALES1.pdf"  width="100%" height="600px"></iframe>
 											<p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
 												<a href="documents/FACTORESAMBIENTALES1.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
 													<span style="border-bottom: 1px solid #3D9970;"> Ver documento</span>
@@ -73,6 +59,22 @@
 													<span style="border-bottom: 1px solid #3D9970;">Activos</span> Ver documento</span>
 												</a>
 											</p>
+                                                
+                                            <h2 style="font-weight: bold; text-align: center; color: #3D9970;">PLAN DE DIRECCION DEL PROYECTO</h2>
+
+                                                <p>Es un documento que establece cómo se ejecutará, supervisará y controlará el proyecto, detallando 
+                                                    los procesos, herramientas y técnicas que se utilizarán para lograr los objetivos del proyecto de 
+                                                    manera eficiente y efectiva.</p>
+
+                                                <iframe src="documents/ENTRADA-plandirecciónproyectos2.pdf"  width="100%" height="600px"></iframe>
+                                                <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
+                                                    <a href="documents/ENTRADA-plandirecciónproyectos2.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
+                                                        <span style="border-bottom: 1px solid #3D9970;">- Ver documento</span>
+                                                        <span style="font-style: italic; color: #3D9970;">PLAN PARA DIRECCION DEL PROYECTO PDF</span>
+                                                    </a>
+                                                </p>
+                                                <p></p>
+                                            
                                         </section>
                                     </article>
                                 </section>
@@ -93,18 +95,14 @@
                                             <header>
                                                 <h2 style ="text-align: center;">---------------- HERRAMIENTAS Y TECNICAS -------------------</h2>
                                             </header>
-          
-                                                <h3>DESCOMPOSICION</h3>
-                                                    <p>
-                                                        Sirve para organizar y visualizar el alcance del proyecto en elementos más pequeños y manejables, lo que facilita
-                                                         la planificación, asignación de recursos, seguimiento y control de las actividades del proyecto, ayudando así a
-                                                          garantizar el cumplimiento de los objetivos establecidos.
-                                                    </p>
-    
-                                                    <div style="text-align: center;">
-                                                        <img src="images/HERRAMIENTA-descomposicion.png" alt="EDT" width="950" height="500">
-                                                    </div>
-                                                </p>
+                                            
+                                            <iframe src="documents/FuentesOmar.pdf"  width="100%" height="600px"></iframe>
+                                            <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
+                                                <a href="documents/FuentesOmar.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
+                                                    <span style="border-bottom: 1px solid #3D9970;">- Ver documento</span>
+                                                    
+                                                </a>
+                                            </p>
         
                                             </section>
                                         </article>
@@ -130,17 +128,25 @@
                                             </header>
         
                                             <section>
-                                                <h2 style="font-weight: bold; text-align: center; color: #3D9970;">Linea base del alcance</h2>
-                                                <p></p>
-                                                <iframe src="documents/Salida-LíneaBasedelAlcance.pdf" width="100%" height="600px"></iframe>
-                                                <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
-                                                    <a href="documents/Salida-LíneaBasedelAlcance.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
-                                                        <span style="border-bottom: 1px solid #3D9970;">Ver documento</span>
-                                                        <span style="font-style: italic; color: #3D9970;">Linea Base del Alcance PDF</span>
-                                                    </a>
-                                                </p>
-                                            
-                                            
+                                                <h2 style="font-weight: bold; text-align: center; color: #3D9970;">ESTIMACION DE LA DURACION</h2>
+                                            <iframe src="documents/Estimaciónduración-Cronograma.pdf"  width="100%" height="600px"></iframe>
+                                            <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
+                                                <a href="documents/Estimaciónduración-Cronograma.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
+                                                    <span style="border-bottom: 1px solid #3D9970;">- Ver documento</span>
+                                                    
+                                                </a>
+                                            </p>
+                                                <h2 style="font-weight: bold; text-align: center; color: #3D9970;">RUTA CRITICA</h2>
+                                                <iframe src="documentsRutacriticaherramienta.pdf"  width="100%" height="600px"></iframe>
+                                            <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
+                                                <a href="documents/Rutacriticaherramienta.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
+                                                    <span style="border-bottom: 1px solid #3D9970;">- Ver documento</span>
+                                                    
+                                                </a>
+
+
+
+
                                             </section>
                                         </article>
         

@@ -1,168 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-		<title>GPTI - Blog</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="icon" href="images/logo.png" type="image/png">
-	</head>
+<html>
+<head>
+    <title>GPTI - Blog</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        #page-wrapper {
+            flex: 1;
+        }
+        #footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0; /* Ajuste el padding del pie de página */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000; /* Asegura que esté sobre el contenido */
+        }
+        #footer p {
+            margin: 0;
+            padding: 0; /* Ajuste el padding del párrafo del pie de página */
+            font-size: 14px; /* Tamaño de letra del texto */
+        }
+        .footer-container {
+            padding: 3px 0; /* Ajuste el padding del contenedor del pie de página */
+        }
+        .hidden {
+            display: none;
+        }
+        #nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: transparent;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        #nav ul li:hover > ul {
+            display: block;
+        }
+        #nav ul ul li {
+            width: 200px;
+        }
+        #nav ul ul a {
+            color: #000;
+            padding: 10px;
+            display: block;
+        }
+        #nav ul ul a:hover {
+            background-color: #84FFAD; /* Verde limón */
+            color: #000;
+        }
+        /* Estilo para el botón "ACTA" activo */
+        #nav ul li.active > a {
+            background-color: #63E68F; /* Verde limón más claro */
+            color: #000;
+        }
+        /* Estilo para el contenido de las secciones */
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container h3 {
+            font-weight: bold;
+            color: #3D9970;
+        }
+        .container p {
+            line-height: 1.6;
+        }
+        .container iframe {
+            margin-top: 20px;
+            border: none;
+            width: 100%;
+            height: 600px;
+        }
+        .container .document-link {
+            text-align: center;
+            font-size: 16px;
+            color: #3D9970;
+            margin-top: 20px;
+        }
+        .document-link a {
+            text-decoration: none;
+            color: #3D9970;
+            font-weight: bold;
+            border-bottom: 1px solid #3D9970;
+            margin-right: 5px;
+        }
+        .document-link a:last-child {
+            border-bottom: none;
+        }
+        .document-link a:hover {
+            color: #000;
+        }
+        .document-link span {
+            font-style: italic;
+            color: #3D9970;
+        }
+        /* Ajuste del pie de página */
+        #footer .container {
+            padding: 5px 0; /* Ajuste el padding del contenedor del pie de página */
+        }
 
+        /* Estilo para el menú "SECCIONES" */
+        #nav ul > li:hover > a {
+            background-color: #000; /* Elimina el color de fondo cuando se pasa el mouse */
+        }
+
+        /* Estilo para las opciones del menú desplegable */
+        #nav ul ul a {
+            color: #000;
+            padding: 10px;
+            display: block;
+        }
+
+        #nav ul ul a:hover {
+            background-color: #84FFAD; /* Verde limón al pasar el mouse */
+            color: #000;
+        }
+
+    </style>
+</head>
 <body class="homepage is-preload">
-
     <div id="page-wrapper">
-
-        <!-- Header  ACERCA-->
-            <header id="header">
-                <div class="logo container">
-                    <div>
-                        <h1><a href="#" id="logo">Gestión de Proyectos de Tecnología de la Información - Proyecto</a></h1>
-                    </div>
+        <!-- Header -->
+        <header id="header">
+            <div class="logo container">
+                <div>
+                    <h1><a href="#" id="logo">Gestión de Proyectos de Tecnología de la Información - Proyecto</a></h1>
                 </div>
-            </header>
+            </div>
+        </header>
+        
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="#">SECCIONES</a>
+                    <ul>
+                        <li><a href="#" onclick="showSection('entrada')">Entradas</a></li>
+                        <li><a href="#" onclick="showSection('herramienta')">Herramientas</a></li>
+                        <li><a href="#" onclick="showSection('salida')">Salidas</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="actividades.html">DEFINIR ACTIVIDADES</a></li>
+            </ul>
+        </nav>
 
-            <!-- Nav -->
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="index.html">ACTIVIDADES</a></li>
-                    
-                </ul>
-            </nav>
+        <!-- Content -->
+        <div id="content">
+            <!-- Entradas -->
+            <section id="entrada" class="container">
+                <header>
+                    <h2>------------------------- ENTRADAS ---------------------------</h2>
+                </header>
+                <section>
+                    <h2 style="font-weight: bold; text-align: center; color: #3D9970;">ACTA DE CONSTITUCION</h2>
+                    <iframe src="documents/acta/actav2.pdf" width="100%" height="600px"></iframe>
+                    <p class="document-link">
+                        <a href="documents/acta/actav2.pdf" target="_blank">
+                            <span>Ver documento</span>
+                            <span style="font-style: italic;"> Acta de constitución PDF</span>
+                        </a>
+                    </p>
+
+					<h2 style="font-weight: bold; text-align: center; color: #3D9970;">PLAN PARA DIRECCION DEL PROYECTO</h2>
+                    <iframe src="documents/gestioncronograma/PlandirecciónProyectos3.pdf" width="100%" height="600px"></iframe>
+                    <p class="document-link">
+                        <a href="documents/gestioncronograma/PlandirecciónProyectos3.pdf" target="_blank">
+                            <span>Ver documento</span>
+                            <span style="font-style: italic;"> Plan para dirección del proyecto PDF</span>
+                        </a>
+                    </p>
+
+                    </p>
+                    <h2 style="font-weight: bold; text-align: center; color: #3D9970;">FACTORES AMBIENTALES Y ACTIVOS DE LA EMPRESA</h2>
+                    <p>Los factores ambientales de la empresa (EEFs) hacen referencia a condiciones que no están bajo el control del equipo del proyecto
+                        y que influyen, restringen o dirigen el proyecto. Estas condiciones pueden ser internas y/o externas a la organización. 
+                        Los EEFs se consideran como entradas de muchos procesos de la dirección de proyectos, específicamente para la mayor parte 
+                        de los procesos de planificación.</p>
+                    <p>Los activos de los procesos de la organización (OPAs) son los planes, los procesos, las políticas, los procedimientos y las
+                        bases de conocimiento específicos de la organización ejecutora y utilizados por la misma. Estos activos influyen en 
+                        la dirección del proyecto.</p>
+                    <iframe src="documents/FACTORESAMBIENTALES.pdf"  width="100%" height="600px"></iframe>
+                    <p class="document-link">
+                        <a href="documents/FACTORESAMBIENTALES.pdf" target="_blank">
+                            <span>Ver documento -</span>
+                            <span style="font-style: italic;"> Factores Ambientales y Activos PDF</span>
+                        </a>
+                    </p>
+                    <iframe src="documents/stakeholders/ACTIVOS1.pdf" width="100%" height="600px"></iframe>
+                    <p class="document-link">
+                        <a href="documents/stakeholders/ACTIVOS1.pdf" target="_blank">
+                            <span>Ver documento</span>
+                        </a>
 
 
-            <div>
-                <section id="entrada">
-                    <div class="container">                                
-                        <div class="col-12">
-                            <section class="box features">
-                                <section>
-                                    <article class="box page-content">
-                                        <header>
-                                            <h2 style ="text-align: center;">------------------------- ENTRADAS ---------------------------</h2>
-                                        </header>
-    
-                                        <section>
-                                            <div>
-                                                <h2 style="font-weight: bold; text-align: center; color: #3D9970;">FACTORES AMBIENTALES Y ACTIVOS</h2>
-
-                                                <iframe src="documents/FACTORESAMBIENTALES1.pdf"  width="100%" height="600px"></iframe>
-											<p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
-												<a href="documents/FACTORESAMBIENTALES1.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
-													<span style="border-bottom: 1px solid #3D9970;"> Ver documento</span>
-													<span style="font-style: italic; color: #3D9970;">Factores Ambientales</span>
-												</a>
-											</p>
-											<iframe src="documents/ACTIVOS1.pdf" width="100%" height="600px"></iframe>
-											<p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
-												<a href="documents/ACTIVOS1.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
-													<span style="border-bottom: 1px solid #3D9970;">Activos</span> Ver documento</span>
-												</a>
-											</p>
-                                                
-                                            <h2 style="font-weight: bold; text-align: center; color: #3D9970;">PLAN DE DIRECCION DEL PROYECTO</h2>
-
-                                                <p>Es un documento que establece cómo se ejecutará, supervisará y controlará el proyecto, detallando 
-                                                    los procesos, herramientas y técnicas que se utilizarán para lograr los objetivos del proyecto de 
-                                                    manera eficiente y efectiva.</p>
-
-                                                <iframe src="documents/ENTRADA-plandirecciónproyectos2.pdf"  width="100%" height="600px"></iframe>
-                                                <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
-                                                    <a href="documents/ENTRADA-plandirecciónproyectos2.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
-                                                        <span style="border-bottom: 1px solid #3D9970;">- Ver documento</span>
-                                                        <span style="font-style: italic; color: #3D9970;">PLAN PARA DIRECCION DEL PROYECTO PDF</span>
-                                                    </a>
-                                                </p>
-                                                <p></p>
-                                            
-                                        </section>
-                                    </article>
-                                </section>
-                            </section>
-                        </div>
-                    </div>
                 </section>
-    
-    
-                <section id="herramienta">
-                    <div class="container">                                
-                        <div class="col-12">
-                            <section class="box features">
-                                <section>
-                                    <article class="box page-content">
-    
-                                        <article class="box page-content">
-                                            <header>
-                                                <h2 style ="text-align: center;">---------------- HERRAMIENTAS Y TECNICAS -------------------</h2>
-                                            </header>
-          
-                                                <h3>ESTIMACION 3 VALORES</h3>
-    
-                                                <div style="text-align: center;">
-                                                    <img src="images/edtdesc.png" alt="EDT" width="950" height="500">
-                                                </div>
-                                                </p>
-        
-                                            </section>
-                                        </article>
-    
-    
-                                    </article>
-                                </section>
-                            </section>
-                        </div>
-                    </div>
-                </section>    
-    
-                <section id="salida">
-                    <div class="container">                                
-                        <div class="col-12">
-                            <section class="box features">
-                                <section>
-                                    <article class="box page-content">
-    
-                                        <article class="box page-content">
-                                            <header>
-                                                <h2 style ="text-align: center;">---------------------------- SALIDA ------------------------------</h2>
-                                            </header>
-        
-                                            <section>
-                                                <h2 style="font-weight: bold; text-align: center; color: #3D9970;">LISTA DE ACTIVIDADES</h2>
-                                                <p></p>
-                                                <iframe src="documents/Listaactividades.pdf" width="100%" height="600px"></iframe>
-                                                <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
-                                                    <a href="documents/Listaactividades.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
-                                                        <span style="border-bottom: 1px solid #3D9970;">Ver documento</span>
-                                                    </a>
-                                                </p>
+            </section>
 
-                                                <h2 style="font-weight: bold; text-align: center; color: #3D9970;">ATRIBUTOS DE ACTIVIDADES</h2>
-                                                <p></p>
-                                                <iframe src="documents/Atributosactividades.pdf" width="100%" height="600px"></iframe>
-                                                <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
-                                                    <a href="documents/Atributosactividades.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
-                                                        <span style="border-bottom: 1px solid #3D9970;">Ver documento</span>
-                                                    </a>
-                                                </p>
-                                            
-                                            
-                                            </section>
-                                        </article>
-        
-    
-    
-                                    </article>
-                                </section>
-                            </section>
-                        </div>
-                    </div>
-                </section>  
+            <!-- Herramientas -->
+            <section id="herramienta" class="container">
+                <header>
+                    <h2>------------------------- HERRAMIENTAS ---------------------------</h2>
+                </header>
+                <h2 style="font-weight: bold; text-align: center; color: #3D9970;">REUNIONES</h2>
+                <iframe src="documents/actividades/Listaactividades.pdf" width="100%" height="600px"></iframe>
+                    <p class="document-link">
+                        <a href="documents/actividades/Listaactividades.pdf" target="_blank">
+                            <span>Ver documento</span>
+                        </a>
+            </section>
+
+            <!-- Salidas -->
+            <section id="salida" class="container">
+                <header>
+                    <h2>------------------------- SALIDAS ---------------------------</h2>
+                </header>
+                <section>
+                    <h2 style="font-weight: bold; text-align: center; color: #3D9970;">LISTA DE ACTIVIDADES</h2>
+					<iframe src="https://docs.google.com/spreadsheets/d/1astCn41AUcJCoeI1iHCN6OjSR0lKnLYIxaupYxnsMcw/edit?usp=sharing" width="100%" height="600px"></iframe>
+                    <p class="document-link">
+                        <a href="https://docs.google.com/spreadsheets/d/1astCn41AUcJCoeI1iHCN6OjSR0lKnLYIxaupYxnsMcw/edit?usp=sharing" target="_blank">
+                            <span>Ver documento</span>
+                            <span style="font-style: italic;">Lista de requisitos</span>
+                        </a>
+
+                    <h2 style="font-weight: bold; text-align: center; color: #3D9970;">ATRIBUTOS DE LAS ACTIVIDADES</h2>
+                    <iframe src="https://docs.google.com/spreadsheets/d/1bHkUJK6NXe2pSvHjPmwm02ARpvUCm95Y0faR7eiiJec/edit?usp=sharing" width="100%" height="600px"></iframe>
+                    <p class="document-link">
+                        <a href="https://docs.google.com/spreadsheets/d/1bHkUJK6NXe2pSvHjPmwm02ARpvUCm95Y0faR7eiiJec/edit?usp=sharing" target="_blank">
+                            <span>Ver documento</span>
+                            <span style="font-style: italic;">Lista de requisitos</span>
+                        </a>
 
 
+                </section>
+            </section>
+        </div>
     </div>
-    
 
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container footer-container">
+            <p>&copy; Todos los derechos reservados</p>
+        </div>
+    </footer>
 
+    <!-- Scripts -->
+    <script>
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            document.querySelectorAll('.container').forEach(section => {
+                section.classList.add('hidden');
+            });
+            // Mostrar la sección seleccionada
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
 
+        // Mostrar todas las secciones al cargar la página inicialmente
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.container').forEach(section => {
+                section.classList.remove('hidden');
+            });
+        });
+    </script>
 </body>
 </html>
