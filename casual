@@ -25,7 +25,7 @@
             <nav id="nav">
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
-                    <li><a href="index.html">DESARROLLO DE CRONOGRAMA</a></li>
+                    <li class="current"><a href="#">PRESUPUESTO</a></li>
                     
                 </ul>
             </nav>
@@ -95,14 +95,17 @@
                                             <header>
                                                 <h2 style ="text-align: center;">---------------- HERRAMIENTAS Y TECNICAS -------------------</h2>
                                             </header>
-                                            
-                                            <iframe src="documents/FuentesOmar.pdf"  width="100%" height="600px"></iframe>
-                                            <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
-                                                <a href="documents/FuentesOmar.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
-                                                    <span style="border-bottom: 1px solid #3D9970;">- Ver documento</span>
-                                                    
-                                                </a>
-                                            </p>
+          
+                                                <h3></h3>
+    
+                                                    <iframe src="documents/FuentesOmar.pdf"  width="100%" height="600px"></iframe>
+                                                     <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
+                                                    <a href="documents/FuentesOmar.pdff" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
+                                                        <span style="border-bottom: 1px solid #3D9970;">- Ver documento</span>
+                                                        <span style="font-style: italic; color: #3D9970;">ESTIMACION 3 VALORES PDF</span>
+                                                    </a>
+                                                </p>
+                                                </p>
         
                                             </section>
                                         </article>
@@ -128,25 +131,17 @@
                                             </header>
         
                                             <section>
-                                                <h2 style="font-weight: bold; text-align: center; color: #3D9970;">ESTIMACION DE LA DURACION</h2>
-                                            <iframe src="documents/Estimaciónduración-Cronograma.pdf"  width="100%" height="600px"></iframe>
-                                            <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
-                                                <a href="documents/Estimaciónduración-Cronograma.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
-                                                    <span style="border-bottom: 1px solid #3D9970;">- Ver documento</span>
-                                                    
-                                                </a>
-                                            </p>
-                                                <h2 style="font-weight: bold; text-align: center; color: #3D9970;">RUTA CRITICA</h2>
-                                                <iframe src="documentsRutacriticaherramienta.pdf"  width="100%" height="600px"></iframe>
-                                            <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
-                                                <a href="documents/Rutacriticaherramienta.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
-                                                    <span style="border-bottom: 1px solid #3D9970;">- Ver documento</span>
-                                                    
-                                                </a>
-
-
-
-
+                                                <h2 style="font-weight: bold; text-align: center; color: #3D9970;">Estimacion de presupuesto</h2>
+                                                <p></p>
+                                                <iframe src="documents/SalidaPresupuesto.pdf" width="100%" height="600px"></iframe>
+                                                <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
+                                                    <a href="documents/SalidaPresupuesto.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
+                                                        <span style="border-bottom: 1px solid #3D9970;">Ver documento</span>
+                                                        <span style="font-style: italic; color: #3D9970;">Estimacion de Presupuesto PDF</span>
+                                                    </a>
+                                                </p>
+                                            
+                                            
                                             </section>
                                         </article>
         
