@@ -1,211 +1,303 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GPTI - Blog</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="icon" href="images/logo.png" type="image/png">
-</head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        #page-wrapper {
+            flex: 1;
+        }
+        #footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0; /* Ajuste el padding del pie de página */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000; /* Asegura que esté sobre el contenido */
+        }
+        #footer p {
+            margin: 0;
+            padding: 0; /* Ajuste el padding del párrafo del pie de página */
+            font-size: 14px; /* Tamaño de letra del texto */
+        }
+        .footer-container {
+            padding: 3px 0; /* Ajuste el padding del contenedor del pie de página */
+        }
+        .hidden {
+            display: none;
+        }
+        #nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: transparent;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        #nav ul li:hover > ul {
+            display: block;
+        }
+        #nav ul ul li {
+            width: 200px;
+        }
+        #nav ul ul a {
+            color: #000;
+            padding: 10px;
+            display: block;
+        }
+        #nav ul ul a:hover {
+            background-color: #84FFAD; /* Verde limón */
+            color: #000;
+        }
+        /* Estilo para el botón "ACTA" activo */
+        #nav ul li.active > a {
+            background-color: #63E68F; /* Verde limón más claro */
+            color: #000;
+        }
+        /* Estilo para el contenido de las secciones */
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container h3 {
+            font-weight: bold;
+            color: #3D9970;
+        }
+        .container p {
+            line-height: 1.6;
+        }
+        .container iframe {
+            margin-top: 20px;
+            border: none;
+            width: 100%;
+            height: 600px;
+        }
+        .container .document-link {
+            text-align: center;
+            font-size: 16px;
+            color: #3D9970;
+            margin-top: 20px;
+        }
+        .document-link a {
+            text-decoration: none;
+            color: #3D9970;
+            font-weight: bold;
+            border-bottom: 1px solid #3D9970;
+            margin-right: 5px;
+        }
+        .document-link a:last-child {
+            border-bottom: none;
+        }
+        .document-link a:hover {
+            color: #000;
+        }
+        .document-link span {
+            font-style: italic;
+            color: #3D9970;
+        }
+        /* Ajuste del pie de página */
+        #footer .container {
+            padding: 5px 0; /* Ajuste el padding del contenedor del pie de página */
+        }
 
+        /* Estilo para el menú "SECCIONES" */
+        #nav ul > li:hover > a {
+            background-color: #000; /* Elimina el color de fondo cuando se pasa el mouse */
+        }
+
+        /* Estilo para las opciones del menú desplegable */
+        #nav ul ul a {
+            color: #000;
+            padding: 10px;
+            display: block;
+        }
+
+        #nav ul ul a:hover {
+            background-color: #84FFAD; /* Verde limón al pasar el mouse */
+            color: #000;
+        }
+
+    </style>
+</head>
 <body class="homepage is-preload">
     <div id="page-wrapper">
-
-        <!-- Header  ACERCA-->
-            <header id="header">
-                <div class="logo container">
-                    <div>
-                        <h1><a href="#" id="logo">Gestión de Proyectos de Tecnología de la Información - Proyecto</a></h1>
-                    </div>
-                </div>
-            </header>
-
-            <!-- Nav -->
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html">INICIO</a></li>
-                    <li class="current"><a href="#">STAKEHOLDERS</a></li>
-                    <li><a href="left-sidebar.html">EMPRESA</a></li>
-                </ul>
-            </nav>
-    </div>
-
-    <div>
-        <section id="entrada">
-            <div class="container">                                
-                <div class="col-12">
-                    <section class="box features">
-                        <section>
-                            <article class="box page-content">
-                                <header>
-                                    <h2 style ="text-align: center;">------------------------- ENTRADAS ---------------------------</h2>
-                                </header>
-
-                                <section>
-                                    <div></div>
-                                    <h2 style="font-weight: bold; text-align: center; color: #3D9970;">ACTA DE CONSTITUCIÓN</h2>
-                                            <!-- Visor de PDF integrado -->
-                                        <iframe src="documents/Acta_de_Constitución_del_Proyecto.pdf" width="100%" height="600px"></iframe>
-                                        <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
-                                            <a href="documents/Acta_de_Constitución_del_Proyecto.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
-                                                <span style="border-bottom: 1px solid #3D9970;">Ver documento</span>
-                                                <span style="font-style: italic; color: #3D9970;"> Acta de Constitucion PDF</span>
-                                            </a>
-                                        </p>
-                                        
-                                    
-                                    <h3 style="font-weight: bold">FACTORES AMBIENTALES Y ACTIVOS DE LA EMPRESA</h3>
-                                        <p>Los factores ambientales de la empresa (EEFs) hacen referencia a condiciones que no están bajo el control del equipo del proyecto
-                                             y que influyen, restringen o dirigen el proyecto. Estas condiciones pueden ser internas y/o externas a la organización. 
-                                             Los EEFs se consideran como entradas de muchos procesos de la dirección de proyectos, específicamente para la mayor parte 
-                                             de los procesos de planificación.</p>
-                                        
-                                        <iframe src="documents/FACTORESAMBIENTALES1.pdf"  width="100%" height="600px"></iframe>
-                                        <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
-                                            <a href="documents/FACTORESAMBIENTALES1.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
-                                                <span style="border-bottom: 1px solid #3D9970;">Normativa - Ver documento</span>
-                                                <span style="font-style: italic; color: #3D9970;">Factores Ambientales</span>
-                                            </a>
-                                        </p>
-                                        <iframe src="documents/ACTIVOS1.pdf" width="100%" height="600px"></iframe>
-                                        <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
-                                            <a href="documents/ACTIVOS1.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
-                                                <span style="border-bottom: 1px solid #3D9970;">Activos</span>Ver documento</span>
-                                            </a>
-                                        </p>
-                                </section>
-                            </article>
-                        </section>
-                    </section>
+        <!-- Header -->
+        <header id="header">
+            <div class="logo container">
+                <div>
+                    <h1><a href="#" id="logo">Gestión de Proyectos de Tecnología de la Información - Proyecto</a></h1>
                 </div>
             </div>
-        </section>
-
-
-        <section id="herramienta">
-            <div class="container">                                
-                <div class="col-12">
-                    <section class="box features">
-                        <section>
-                            <article class="box page-content">
-
-                                <article class="box page-content">
-                                    <header>
-                                        <h2 style ="text-align: center;">---------------- HERRAMIENTAS Y TECNICAS -------------------</h2>
-                                    </header>
-
-                                    <section>
-                                        <h2 style="font-weight: bold; text-align: center; color: #3D9970;">RECOPILACION DE DATOS DE INTERESADOS</h2>
-                                        <h3>LISTA DE INTERESADOS</h3>
-                                        <iframe src="documents/ListaInteresados1.pdf" width="100%" height="600px"></iframe>
-                                                <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
-                                                <a href="documents/ListaInteresados1.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
-                                                <span style="border-bottom: 1px solid #3D9970;">Lista de Interesados</span>Ver documento</span>
-                                                </a>
-                                                </p>
-
-                                        <p></p>   
-
-                                        <h3> Matriz de Interesados </h3>
-
-                                        <div style="text-align: center;">
-                                            <img src="images/PlantillaMatriz.jpg" alt="Plantilla de interesados" width="950" height="500">
-                                        </div>
-                                        <p></p>
-                                        <div style="text-align: center;">
-                                            <img src="images/MatrizInteresados.png" alt="Matriz de interesados" width="950" height="500">
-                                        </div>
-
-                                        <h3>REUNIONES</h3>
-                                            <p>
-                                                Las reuniones son sesiones de interacción directa entre miembros del equipo de proyecto de T.I., utilizadas para discutir estrategias, 
-                                                seguir el progreso, resolver problemas y tomar decisiones. Proporcionan un entorno colaborativo donde se comparte información,
-                                                 se generan ideas y se fomenta la comunicación efectiva, siendo una técnica crucial de recopilación de datos para asegurar 
-                                                 el éxito del proyecto. 
-                                            </p>
-                                            <div style="text-align: center;">
-                                                <img src="images/TormentaIdeas.jpg" alt="Reunión Inicial para definir Idea Central y objetivos del proyecto" width="950" height="500">
-                                            </div>
-                                    </section>
-                                </article>
-
-
-                            </article>
-                        </section>
-                    </section>
-                </div>
-            </div>
-        </section>    
-
-        <section id="salida">
-            <div class="container">                                
-                <div class="col-12">
-                    <section class="box features">
-                        <section>
-                            <article class="box page-content">
-
-                                <article class="box page-content">
-                                    <header>
-                                        <h2 style ="text-align: center;">---------------------------- SALIDA ------------------------------</h2>
-                                    </header>
-
-                                    <section>
-                                        <h2 style="font-weight: bold; text-align: center; color: #3D9970;">INVOLUCRAMIENTO</h2>
-                                        
-                                        <iframe src="documents/InvolucramientoInteresados.pdf" width="100%" height="600px"></iframe>
-                                        <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
-                                            <a href="documents/InvolucramientoInteresados.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
-                                                <span style="border-bottom: 1px solid #3D9970;">Ver documento</span>
-                                                <span style="font-style: italic; color: #3D9970;"> Involucramiento de Interesados PDF</span>
-                                            </a>
-                                        </p>
-                                    
-                                    </section>
-
-                                    <section>
-                                        <h2 style="font-weight: bold; text-align: center; color: #3D9970;">REGISTRO DE INTERESADOS</h2>
-                                        
-                                        <iframe src="documents/RegistroInteresados.pdf" width="100%" height="600px"></iframe>
-                                        <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
-                                            <a href="documents/RegistroInteresados.pdf target=" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
-                                                <span style="border-bottom: 1px solid #3D9970;">Ver documento</span>
-                                                <span style="font-style: italic; color: #3D9970;"> Registro de interesados PDF</span>
-                                            </a>
-                                        </p>
-                                    
-                                    
-                                    </section>
-                                    
-                                </article>
-
-
-
-                            </article>
-                        </section>
-                    </section>
-                </div>
-            </div>
-        </section>  
+        </header>
         
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="#">SECCIONES</a>
+                    <ul>
+                        <li><a href="#" onclick="showSection('entrada')">Entradas</a></li>
+                        <li><a href="#" onclick="showSection('herramienta')">Herramientas</a></li>
+                        <li><a href="#" onclick="showSection('salida')">Salidas</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="interesados.html">STAKEHOLDERS</a></li>
+            </ul>
+        </nav>
 
-        <footer id="footer">
-            <div class="container">
+        <!-- Content -->
+        <div id="content">
+            <!-- Entradas -->
+            <section id="entrada" class="container">
+                <header>
+                    <h2>------------------------- ENTRADAS ---------------------------</h2>
+                </header>
+                <section>
+                    <!-- Contenido de Entradas omitido por brevedad -->
+                    <h2 style="font-weight: bold; text-align: center; color: #3D9970;">ACTA DE CONSTITUCION</h2>
+                    <iframe src="documents/acta/actav2.pdf" width="100%" height="600px"></iframe>
+                    <p class="document-link">
+                        <a href="documents/acta/actav2.pdf" target="_blank">
+                            <span>Ver documento</span>
+                            <span style="font-style: italic;"> Acta de Constitución PDF</span>
+                        </a>
+                    </p>
 
-                <!-- Copyright -->
-                    <div id="copyright">
-                        <ul class="menu">
-                            <li>&copy; Todos los derechos reservados</li>
-                        </ul>
+                    </p>
+                    <h2 style="font-weight: bold; text-align: center; color: #3D9970;">FACTORES AMBIENTALES Y ACTIVOS DE LA EMPRESA</h2>
+                    <p>Los factores ambientales de la empresa (EEFs) hacen referencia a condiciones que no están bajo el control del equipo del proyecto
+                        y que influyen, restringen o dirigen el proyecto. Estas condiciones pueden ser internas y/o externas a la organización. 
+                        Los EEFs se consideran como entradas de muchos procesos de la dirección de proyectos, específicamente para la mayor parte 
+                        de los procesos de planificación.</p>
+                    <p>Los activos de los procesos de la organización (OPAs) son los planes, los procesos, las políticas, los procedimientos y las
+                        bases de conocimiento específicos de la organización ejecutora y utilizados por la misma. Estos activos influyen en 
+                        la dirección del proyecto.</p>
+                    <iframe src="documents/FACTORESAMBIENTALES.pdf"  width="100%" height="600px"></iframe>
+                    <p class="document-link">
+                        <a href="documents/FACTORESAMBIENTALES.pdf" target="_blank">
+                            <span>Ver documento -</span>
+                            <span style="font-style: italic;"> Factores Ambientales y Activos PDF</span>
+                        </a>
+                    </p>
+                    <iframe src="documents/stakeholders/ACTIVOS1.pdf" width="100%" height="600px"></iframe>
+                    <p class="document-link">
+                        <a href="documents/stakeholders/ACTIVOS1.pdf" target="_blank">
+                            <span>Ver documento</span>
+                        </a>
+
+
+                </section>
+            </section>
+
+            <!-- Herramientas -->
+            <section id="herramienta" class="container">
+                <header>
+                    <h2>------------------------- HERRAMIENTAS ---------------------------</h2>
+                </header>
+                <section>
+                    <h2 style="font-weight: bold; text-align: center; color: #3D9970;">RECOPILACION DE DATOS DE INTERESADOS</h2>
+                    <h3>LISTA DE INTERESADOS</h3>
+                    <iframe src="documents/stakeholders/ListaInteresados1.pdf" width="100%" height="600px"></iframe>
+                            <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
+                            <a href="documents/stakeholders/ListaInteresados1.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
+                            <span style="border-bottom: 1px solid #3D9970;">Lista de Interesados</span>Ver documento</span>
+                            </a>
+                            </p>
+
+                    <h2 style="font-weight: bold; text-align: center; color: #3D9970;"> Matriz de Interesados</h2>
+                    <div style="text-align: center;">
+                        <img src="images/PlantillaMatriz.jpg" alt="Plantilla de interesados" width="950" height="500">
+                    </div>
+                    <p></p>
+                    <div style="text-align: center;">
+                        <img src="images/MatrizInteresados.png" alt="Matriz de interesados" width="950" height="500">
                     </div>
 
-            </div>
-        </footer>
+                    <h3>REUNIONES</h3>
+                    <p>
+                        Las reuniones son sesiones de interacción directa entre miembros del equipo de proyecto de T.I., utilizadas para discutir estrategias, 
+                        seguir el progreso, resolver problemas y tomar decisiones. Proporcionan un entorno colaborativo donde se comparte información,
+                        se generan ideas y se fomenta la comunicación efectiva, siendo una técnica crucial de recopilación de datos para asegurar 
+                        el éxito del proyecto. 
+                    </p>
+                    <div style="text-align: center;">
+                        <img src="images/TormentaIdeas.jpg" alt="Reunión Inicial para definir Idea Central y objetivos del proyecto" width="950" height="500">
+                    </div>
+                    
+                </section>
+            </section>
 
+            <!-- Salidas -->
+            <section id="salida" class="container">
+                <header>
+                    <h2>------------------------- SALIDAS ---------------------------</h2>
+                </header>
+                <section>
+                    <h2 style="font-weight: bold; text-align: center; color: #3D9970;">INVOLUCRAMIENTO</h2>
+                    <iframe src="documents/stakeholders/InvolucramientoInteresados.pdf" width="100%" height="600px"></iframe>
+                    <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
+                        <a href="documents/stakeholders/InvolucramientoInteresados.pdf"target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
+                            <span style="border-bottom: 1px solid #3D9970;">Ver documento</span>
+                            <span style="font-style: italic; color: #3D9970;"> Involucramiento de Interesados PDF</span>
+                        </a>
+                    </p>
+
+                    <h2 style="font-weight: bold; text-align: center; color: #3D9970;">REGISTRO DE INTERESADOS</h2>
+                                        
+                    <iframe src="documents/stakeholders/RegistroInteresados.pdf" width="100%" height="600px"></iframe>
+                    <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
+                        <a href="documents/stakeholders/RegistroInteresados.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
+                            <span style="border-bottom: 1px solid #3D9970;">Ver documento</span>
+                            <span style="font-style: italic; color: #3D9970;"> Registro de interesados PDF</span>
+                        </a>
+                    </p>
+
+                </section>
+            </section>
+        </div>
     </div>
 
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container footer-container">
+            <p>&copy; Todos los derechos reservados</p>
+        </div>
+    </footer>
 
+    <!-- Scripts -->
+    <script>
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            document.querySelectorAll('.container').forEach(section => {
+                section.classList.add('hidden');
+            });
+            // Mostrar la sección seleccionada
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
 
-
-
+        // Mostrar todas las secciones al cargar la página inicialmente
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.container').forEach(section => {
+                section.classList.remove('hidden');
+            });
+        });
+    </script>
 </body>
 </html>

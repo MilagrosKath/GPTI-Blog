@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
     <title>GPTI - Blog</title>
@@ -6,6 +6,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="icon" href="images/logo.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        #page-wrapper {
+            flex: 1;
+        }
+        #footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0; /* Ajuste el padding del pie de página */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000; /* Asegura que esté sobre el contenido */
+        }
+        #footer p {
+            margin: 0;
+            padding: 0; /* Ajuste el padding del párrafo del pie de página */
+            font-size: 14px; /* Tamaño de letra del texto */
+        }
+        .footer-container {
+            padding: 3px 0; /* Ajuste el padding del contenedor del pie de página */
+        }
+        .hidden {
+            display: none;
+        }
+        #nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: transparent;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        #nav ul li:hover > ul {
+            display: block;
+        }
+        #nav ul ul li {
+            width: 200px;
+        }
+        #nav ul ul a {
+            color: #000;
+            padding: 10px;
+            display: block;
+        }
+        #nav ul ul a:hover {
+            background-color: #84FFAD; /* Verde limón */
+            color: #000;
+        }
+        /* Estilo para el botón "ACTA" activo */
+        #nav ul li.active > a {
+            background-color: #63E68F; /* Verde limón más claro */
+            color: #000;
+        }
+        /* Estilo para el contenido de las secciones */
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container h3 {
+            font-weight: bold;
+            color: #3D9970;
+        }
+        .container p {
+            line-height: 1.6;
+        }
+        .container iframe {
+            margin-top: 20px;
+            border: none;
+            width: 100%;
+            height: 600px;
+        }
+        .container .document-link {
+            text-align: center;
+            font-size: 16px;
+            color: #3D9970;
+            margin-top: 20px;
+        }
+        .document-link a {
+            text-decoration: none;
+            color: #3D9970;
+            font-weight: bold;
+            border-bottom: 1px solid #3D9970;
+            margin-right: 5px;
+        }
+        .document-link a:last-child {
+            border-bottom: none;
+        }
+        .document-link a:hover {
+            color: #000;
+        }
+        .document-link span {
+            font-style: italic;
+            color: #3D9970;
+        }
+        /* Ajuste del pie de página */
+        #footer .container {
+            padding: 5px 0; /* Ajuste el padding del contenedor del pie de página */
+        }
+
+        /* Estilo para el menú "SECCIONES" */
+        #nav ul > li:hover > a {
+            background-color: #000; /* Elimina el color de fondo cuando se pasa el mouse */
+        }
+
+        /* Estilo para las opciones del menú desplegable */
+        #nav ul ul a {
+            color: #000;
+            padding: 10px;
+            display: block;
+        }
+
+        #nav ul ul a:hover {
+            background-color: #84FFAD; /* Verde limón al pasar el mouse */
+            color: #000;
+        }
+
+
+
+    </style>
 </head>
 <body class="homepage is-preload">
     <div id="page-wrapper">
@@ -13,143 +144,109 @@
         <header id="header">
             <div class="logo container">
                 <div>
-                    <h1><a href="index.html" id="logo">Gestion de Proyectos de Tecnologías de Información</a></h1>
-                    <p> - Proyecto </p>
+                    <h1><a href="#" id="logo">Gestión de Proyectos de Tecnología de la Información - Proyecto</a></h1>
                 </div>
             </div>
         </header>
-
+        
         <!-- Nav -->
         <nav id="nav">
             <ul>
-                <li class="current"><a href="index.html">INICIO</a></li>
-                <li>
-                    <a href="#">SECCIONES</a>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="#">SECCIONES</a>
                     <ul>
-                        <li>
-                            <a href="#" onclick="showSection('entradas')">Entradas</a>
-                        </li>
-                        <li>
-                            <a href="#" onclick="showSection('herramientas')">Herramientas</a>
-                        </li>
-                        <li>
-                            <a href="#" onclick="showSection('salidas')">Salidas</a>
-                        </li>
+                        <li><a href="#" onclick="showSection('entrada')">Entradas</a></li>
+                        <li><a href="#" onclick="showSection('herramienta')">Herramientas</a></li>
+                        <li><a href="#" onclick="showSection('salida')">Salidas</a></li>
                     </ul>
                 </li>
-                <li><a href="left-sidebar.html">EMPRESA</a></li>
+                <li class="active"><a href="acta.html">ACTA</a></li>
             </ul>
         </nav>
 
-        <!-- Main -->
-        <section id="main" class="wrapper style1 fade-up">
-            <div class="inner">
-                <div id="entradas" class="content-section" style="display:none;">
-                    <h2>Entradas</h2>
-                    <p>Contenido relacionado con las entradas.</p>
-                </div>
-                <div id="herramientas" class="content-section" style="display:none;">
-                    <h2>Herramientas</h2>
-                    <p>Contenido relacionado con las herramientas.</p>
-                </div>
-                <div id="salidas" class="content-section" style="display:none;">
-                    <h2>Salidas</h2>
-                    <p>Contenido relacionado con las salidas.</p>
-                </div>
-                <div id="equipo" class="content-section">
-                    <h2>EQUIPO</h2>
-                    <div class="features" style="display: inline-block; text-align: left;">
-                        <div class="row">
-                            <div class="col-4 col-6-medium col-12-small">
-                                <section>
-                                    <div class="centered">
-                                        <span class="icon solid major fa-user"></span>
-                                        <img src="images/pic01.jpg" alt="Daniel Gonzales Castillo" width="50" height="50">
-                                        <h3>Daniel Gonzales Castillo</h3>
-                                    </div>
-                                </section>
-                            </div>
-                            <div class="col-4 col-6-medium col-12-small">
-                                <section>
-                                    <div class="centered">
-                                        <span class="icon solid major fa-user"></span>
-                                        <img src="images/pic01.jpg" alt="Milagros Soto Obregon" width="50" height="50">
-                                        <h3>Milagros Soto Obregon</h3>
-                                    </div>
-                                </section>
-                            </div>
-                            <div class="col-4 col-6-medium col-12-small">
-                                <section>
-                                    <div class="centered">
-                                        <span class="icon solid major fa-user"></span>
-                                        <img src="images/pic01.jpg" alt="James Huanuco Vicuña" width="50" height="50">
-                                        <h3>James Huanuco Vicuña</h3>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                        <p></p>
-                        <div class="row">
-                            <div class="col-4 col-6-medium col-12-small">
-                                <section>
-                                    <div class="centered">
-                                        <span class="icon solid major fa-user"></span>
-                                        <img src="images/pic01.jpg" alt="Omar Ciriaco Esquivel" width="50" height="50">
-                                        <h3>Omar Ciriaco Esquivel</h3>
-                                    </div>
-                                </section>
-                            </div>
-                            <div class="col-4 col-6-medium col-12-small">
-                                <section>
-                                    <div class="centered">
-                                        <span class="icon solid major fa-user"></span>
-                                        <img src="images/pic01.jpg" alt="Antony Vasquez Leiva" width="50" height="50">
-                                        <h3>Antony Vasquez Leiva</h3>
-                                    </div>
-                                </section>
-                            </div>
-                            <div class="col-4 col-6-medium col-12-small">
-                                <section>
-                                    <div class="centered">
-                                        <span class="icon solid major fa-user"></span>
-                                        <img src="images/pic01.jpg" alt="Miguel Yauricasa Mendoza" width="50" height="50">
-                                        <h3>Miguel Yauricasa Mendoza</h3>
-                                    </div>
-                                </div>
-                                <p></p>
-                        </div>
+        <!-- Content -->
+        <div id="content">
+            <!-- Entradas -->
+            <section id="entrada" class="container">
+                <header>
+                    <h2>------------------------- ENTRADAS ---------------------------</h2>
+                </header>
+                <section>
+                    <div></div>
+                    <h2 style="font-weight: bold; text-align: center; color: #3D9970;">DOCUMENTOS DE NEGOCIO</h2>
+                    <h3>CASO DE NEGOCIO</h3>
+                    <p>Es un documento que proporciona la justificación para iniciar un proyecto, siendo detallado incluyendo objetivos, 
+                        problemática a resolver, visión del proyecto y análisis costo-beneficio. Sirve como base para autorizar 
+                        oficialmente el inicio del proyecto y alinear a todas las partes interesadas en los objetivos y beneficios esperados.</p>
+                    <iframe src="documents/Caso_De_Negocio.pdf" width="100%" height="600px"></iframe>
+                    <p class="document-link">
+                        <a href="documents/Caso_De_Negocio.pdf" target="_blank">
+                            <span>Ver documento</span>
+                            <span style="font-style: italic;"> Caso de Negocio PDF</span>
+                        </a>
+                    </p>
+                    <h3 style="font-weight: bold">FACTORES AMBIENTALES Y ACTIVOS DE LA EMPRESA</h3>
+                    <p>Los factores ambientales de la empresa (EEFs) hacen referencia a condiciones que no están bajo el control del equipo del proyecto
+                        y que influyen, restringen o dirigen el proyecto. Estas condiciones pueden ser internas y/o externas a la organización. 
+                        Los EEFs se consideran como entradas de muchos procesos de la dirección de proyectos, específicamente para la mayor parte 
+                        de los procesos de planificación.</p>
+                    <p>Los activos de los procesos de la organización (OPAs) son los planes, los procesos, las políticas, los procedimientos y las
+                        bases de conocimiento específicos de la organización ejecutora y utilizados por la misma. Estos activos influyen en 
+                        la dirección del proyecto.</p>
+                    <iframe src="documents/FACTORESAMBIENTALES.pdf"  width="100%" height="600px"></iframe>
+                    <p class="document-link">
+                        <a href="documents/FACTORESAMBIENTALES.pdf" target="_blank">
+                            <span>Ver documento -</span>
+                            <span style="font-style: italic;"> Factores Ambientales y Activos PDF</span>
+                        </a>
+                    </p>
+                    <iframe src="documents/ACTIVOS.pdf" width="100%" height="600px"></iframe>
+                    <p class="document-link">
+                        <a href="documents/ACTIVOS.pdf" target="_blank">
+                            <span>Ver documento</span>
+                        </a>
+                    </p>
+                </section>
+            </section>
+
+            <!-- Herramientas -->
+            <section id="herramienta">
+                <div class="container">
+                    <div class="col-12">
+                        <h2>Herramientas</h2>
+                        <p>Contenido de las herramientas.</p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Footer -->
-        <footer id="footer">
-            <div class="container">
-                <!-- Copyright -->
-                <div id="copyright">
-                    <ul class="menu">
-                        <li>&copy; Todos los derechos reservados</li>
-                    </ul>
+            <!-- Salidas -->
+            <section id="salida">
+                <div class="container">
+                    <div class="col-12">
+                        <h2>Salidas</h2>
+                        <p>Contenido de las salidas.</p>
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </section>
+        </div>
     </div>
 
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container footer-container">
+            <p>&copy; Todos los derechos reservados</p>
+        </div>
+    </footer>
+
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
     <script>
-        function showSection(section) {
-            document.querySelectorAll('.content-section').forEach(function(element) {
-                element.style.display = 'none';
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('hidden');
             });
-            document.getElementById(section).style.display = 'block';
+            // Mostrar la sección seleccionada
+            document.getElementById(sectionId).classList.remove('hidden');
         }
     </script>
 </body>
