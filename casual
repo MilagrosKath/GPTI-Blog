@@ -25,7 +25,7 @@
             <nav id="nav">
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
-                    <li class="current"><a href="#">PRESUPUESTO</a></li>
+                    <li><a href="index.html">Estimar duracion de actividades</a></li>
                     
                 </ul>
             </nav>
@@ -95,18 +95,15 @@
                                             <header>
                                                 <h2 style ="text-align: center;">---------------- HERRAMIENTAS Y TECNICAS -------------------</h2>
                                             </header>
-          
-                                                <h3></h3>
-    
-                                                    <iframe src="documents/FuentesOmar.pdf"  width="100%" height="600px"></iframe>
-                                                     <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
-                                                    <a href="documents/FuentesOmar.pdff" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
-                                                        <span style="border-bottom: 1px solid #3D9970;">- Ver documento</span>
-                                                        <span style="font-style: italic; color: #3D9970;">ESTIMACION 3 VALORES PDF</span>
-                                                    </a>
-                                                </p>
-                                                </p>
-        
+                                            <h2 style="font-weight: bold; text-align: center; color: #3D9970;">ESTIMACION BASADA EN 3 VALORES</h2>                                           
+                                            <iframe src="https://docs.google.com/spreadsheets/d/1LfiJw85rVxq3treasb8lvrBPANE9GwqmheokJerIFRA/edit?usp=sharing" width="100%" height="600px"></iframe>
+                                            <p class="document-link">
+                                                <a href="https://docs.google.com/spreadsheets/d/1LfiJw85rVxq3treasb8lvrBPANE9GwqmheokJerIFRA/edit?usp=sharing" target="_blank">
+                                                    <span>Ver documento</span>
+                                                    <span style="font-style: italic;">Estimacion 3 valores</span>
+                                                </a>
+                                            </p>
+                                
                                             </section>
                                         </article>
     
@@ -131,16 +128,15 @@
                                             </header>
         
                                             <section>
-                                                <h2 style="font-weight: bold; text-align: center; color: #3D9970;">Estimacion de presupuesto</h2>
-                                                <p></p>
-                                                <iframe src="documents/SalidaPresupuesto.pdf" width="100%" height="600px"></iframe>
-                                                <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
-                                                    <a href="documents/SalidaPresupuesto.pdf" target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
-                                                        <span style="border-bottom: 1px solid #3D9970;">Ver documento</span>
-                                                        <span style="font-style: italic; color: #3D9970;">Estimacion de Presupuesto PDF</span>
-                                                    </a>
-                                                </p>
-                                            
+                                                <h2 style="font-weight: bold; text-align: center; color: #3D9970;">ESTIMACION DE DURACION DE ACTIVIDADES</h2>
+
+                                                <iframe src="documents/secuenciar/EstimacionTiempo.pdf"  width="100%" height="600px"></iframe>
+                                            <p style="text-align: center; font-size: 16px; color: #3D9970; margin-top: 20px;">
+                                                <a href="documents/secuenciar/EstimacionTiempo.pdf"  target="_blank" style="text-decoration: none; color: #3D9970; font-weight: bold;">
+                                                    <span style="border-bottom: 1px solid #3D9970;">- Ver documento</span>
+                                                    
+                                                </a>
+                                            </p>
                                             
                                             </section>
                                         </article>
