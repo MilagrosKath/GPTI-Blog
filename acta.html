@@ -134,6 +134,26 @@
             color: #000;
         }
 
+        #header .logo.container {
+            display: flex;
+            justify-content: center; /* Centra el contenido horizontalmente */
+            align-items: center; /* Centra el contenido verticalmente */
+            padding: 20px 0 10px 0; /* Ajusta el padding superior e inferior */
+        }
+
+        #header .logo h1 {
+            margin: 0;
+            padding: 0;
+            line-height: 1.2;
+        }
+
+        #header .logo h1 a {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+
+
     </style>
 </head>
 <body class="homepage is-preload">
@@ -141,9 +161,7 @@
         <!-- Header -->
         <header id="header">
             <div class="logo container">
-                <div>
-                    <h1><a href="#" id="logo">Gestión de Proyectos de Tecnología de la Información - Proyecto</a></h1>
-                </div>
+                    <h1><a href="#" id="logo">Gestión de Proyectos de Tecnología de la Información - Grupo 3</a></h1>
             </div>
         </header>
         
@@ -170,7 +188,6 @@
                     <h2>------------------------- ENTRADAS ---------------------------</h2>
                 </header>
                 <section>
-                    <!-- Contenido de Entradas omitido por brevedad -->
                     <h2 style="font-weight: bold; text-align: center; color: #3D9970;">DOCUMENTOS DE NEGOCIO</h2>
                     <h3>CASO DE NEGOCIO</h3>
                     <p>Es un documento que proporciona la justificación para iniciar un proyecto, siendo detallado incluyendo objetivos, 
@@ -180,11 +197,9 @@
                     <p class="document-link">
                         <a href="documents/acta/casonegociov1.2.pdf" target="_blank">
                             <span>Ver documento</span>
-                            <span style="font-style: italic;"> Caso de Negocio PDF</span>
                         </a>
                     </p>
 
-                    </p>
                     <h2 style="font-weight: bold; text-align: center; color: #3D9970;">FACTORES AMBIENTALES Y ACTIVOS DE LA EMPRESA</h2>
                     <p>Los factores ambientales de la empresa (EEFs) hacen referencia a condiciones que no están bajo el control del equipo del proyecto
                         y que influyen, restringen o dirigen el proyecto. Estas condiciones pueden ser internas y/o externas a la organización. 
